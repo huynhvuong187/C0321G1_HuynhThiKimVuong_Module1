@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+ <input type="number" id="nhap1">
+ <input type="number" id="nhap2">
+ <input type="button" value="tinh" onclick="tinh()"><br>
+ <input type="text" placeholder="nhập3" id="nhap3" onchange="thaydoi()"><br>
+ <input type="text" placeholder="nhặp3" id="nhap4" oninput="sukieninput()">
+<p id="hienthi">ketqua</p>
+<script>
+    function tinh() {
+        let a= document.getElementById("nhap1").value;
+        let b= document.getElementById("nhap2").value;
+        let tong = a + b;
+        alert("tổng 2 số a+b = " +tong);
+    }
+
+    function thaydoi(){
+        let d=document.getElementById("nhap3").value;
+        alert(d);
+    }
+    function sukieninput(){
+        let c= document.getElementById("nhap4").value;
+        document.getElementById("hienthi").innertext=c;
+    }
+
+</script>
+</body>
+</html>

@@ -3,18 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
-    <STYLE>
-
-        tr th:nth-child(1){
-            background-color: ORANGE;
-        }
-        tr:nth-child(1){
-            background-color:orange;
-        }
-        tr td:nth-child(){
-            background-color: black;
-        }odd
-    </STYLE>
+    <style>
+     .the1:nth-child(odd){
+         background-color: black;
+     }
+     .the2:nth-child(even){
+         background-color: black;
+     }
+    </style>
 </head>
 <body>
 <table>
@@ -31,7 +27,7 @@
             <TH>7</TH>
             <TH>8</TH>
         </TR>
-        <TR>
+        <TR class="the1">
             <TH>A</TH>
             <TD> </TD>
             <TD> </TD>
@@ -42,7 +38,7 @@
             <TD> </TD>
             <TD> </TD>
         </TR>
-        <TR>
+        <TR class="the2">
             <TH>B</TH>
             <TD> </TD>
             <TD> </TD>
@@ -53,7 +49,7 @@
             <TD> </TD>
             <TD> </TD>
         </TR>
-        <TR>
+        <TR class="the1">
             <TH>C</TH>
             <TD> </TD>
             <TD> </TD>
@@ -64,7 +60,7 @@
             <TD> </TD>
             <TD> </TD>
         </TR>
-        <TR>
+        <TR class="the2">
             <TH>D</TH>
             <TD> </TD>
             <TD> </TD>
@@ -75,7 +71,7 @@
             <TD> </TD>
             <TD> </TD>
         </TR>
-        <TR>
+        <TR class="the1">
             <TH>E</TH>
             <TD> </TD>
             <TD> </TD>
@@ -86,7 +82,7 @@
             <TD> </TD>
             <TD> </TD>
         </TR>
-        <TR>
+        <TR class="the2">
             <TH>F</TH>
             <TD> </TD>
             <TD> </TD>
@@ -97,7 +93,7 @@
             <TD> </TD>
             <TD> </TD>
         </TR>
-        <TR>
+        <TR class="the1">
             <TH>G</TH>
             <TD> </TD>
             <TD> </TD>
@@ -108,7 +104,7 @@
             <TD> </TD>
             <TD> </TD>
         </TR>
-        <TR>
+        <TR class="the2">
             <TH>H</TH>
             <TD> </TD>
             <TD> </TD>
@@ -122,6 +118,5 @@
 
 
     </table>
-
 </body>
 </html>
