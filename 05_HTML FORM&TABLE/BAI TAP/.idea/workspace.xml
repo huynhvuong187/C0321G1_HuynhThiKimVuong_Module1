@@ -20,11 +20,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d916e50c-649f-408a-aeec-204b9fd4b239" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/BAI TAP TAO BAN NANG CAO.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BAI TAP TAO BAN NANG CAO.html" beforeDir="false" afterPath="$PROJECT_DIR$/BAI TAP TAO BAN NANG CAO.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Tao bang market reseach survey.html" beforeDir="false" afterPath="$PROJECT_DIR$/Tao bang market reseach survey.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bai tap tao bang simple.html" beforeDir="false" afterPath="$PROJECT_DIR$/bai tap tao bang simple.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bai tap tao form simple.html" beforeDir="false" afterPath="$PROJECT_DIR$/bai tap tao form simple.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,6 +33,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="HTML File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -61,11 +60,13 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../06_TỔNG QUAN VỀ JAVASCRIPT/THỰC HÀNH" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\C0321G1_HuynhThiKimVuong_Module1\06_TỔNG QUAN VỀ JAVASCRIPT\THỰC HÀNH" />
+      <recent name="D:\C0321G1_HuynhThiKimVuong_Module1\06_TỔNG QUAN VỀ JAVARSCRIPT\THỰC HÀNH" />
       <recent name="D:\C0321G1_HuynhThiKimVuong_Module1\05_HTML FORM&amp;TABLE\BAI TAP" />
       <recent name="D:\C0321G1_HuynhThiKimVuong_Module1\05_HTML FORM&amp;TABLE\THUC HANH" />
     </key>
@@ -83,7 +84,8 @@
       <updated>1617153112954</updated>
       <workItem from="1617153114157" duration="5873000" />
       <workItem from="1617165312937" duration="2723000" />
-      <workItem from="1617169918011" duration="31317000" />
+      <workItem from="1617169918011" duration="31734000" />
+      <workItem from="1617239129161" duration="6283000" />
     </task>
     <servers />
   </component>
