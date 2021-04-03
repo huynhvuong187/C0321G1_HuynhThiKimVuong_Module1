@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        body{
+            background-image: url("https://img.thuthuat123.com/uploads/2019/07/12/hinh-nen-hd-chu-chim-va-qua-tao-can-do-de-thuong_085130071.jpg");
+        }
+    </style>
+</head>
+<body>
+<table>
+    <tr>
+        <th>Amount</th>
+        <th></th>
+        <th>From currency</th>
+        <th></th>
+        <th>To currency</th>
+    </tr>
+    <tr>
+        <td><input type="number" id="nhaptien" placeholder="hay nhap so tien"></td>
+        <td></td>
+        <td class="o1">
+            <form>
+                <select>
+                    <option>VietNam</option>
+                    <option>lao</option>
+                </select>
+            </form>
+        </td>
+        <td></td>
+        <td class="o2">
+            <form>
+                <select>
+                    <option>Usd</option>
+                    <option>Yen</option>
+                </select>
+            </form>
+        </td>
+    </tr>
+</table>
+<input type="button" value="Convert" onclick="change()">
+<p id="result">Result: </p>
+<script>
+    function change() {
+        let c = document.getElementById("nhaptien").value;
+        let f = c / 23000;
+        document.getElementById("result").innerText = ("Result: ") + f;
+
+    }
+
+    //     if (document.getElementsByClassName(('o1') == "vietnam"))&&
+    //     document.getElementsByClassName(('o2')== "usd")
+    //     {
+    //         let f = c / 23000;
+    //         alert(f);
+    //     }
+    // else
+    //     (document.getElementsByClassName(('o1') =="vietnam")) && (document.getElementsByClassName(('o2')=="yen"))
+    //     {
+    //         let f = c / 220;
+    //         alert(f);
+    //     }
+    //     else
+    //     (document.getElementsByClassName(('o1') == "lao")) &&
+    //     (document.getElementsByClassName(('o2') == "usd"))
+    //     {
+    //         let f = c / 30000;
+    //         alert(f);
+    //     else
+    //         (document.getElementsByClassName(('o1') == "lao")) && (document.getElementsByClassName(('o2')=="yen"))
+    //         {
+    //             let f = c / 300;
+    //             alert(f);
+    //         }
+    //     }
+    //
+    // }
+</script>
+</body>
+</html>

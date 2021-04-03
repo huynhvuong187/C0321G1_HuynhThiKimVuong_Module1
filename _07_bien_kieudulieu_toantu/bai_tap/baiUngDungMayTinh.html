@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>UNG DUNG MAY TINH</title>
+</head>
+<body>
+<input type="number" id="n1" placeholder="nhap so 1">
+<input type="number" id="n2" placeholder="nhap so 2"><br>
+<input type="button" value="Addition(+)" onclick="cong()">
+<input type="button" value="Subtraction(-)" onclick="tru()">
+<input type="button" value="Multiplication(x)" onclick="nhan()">
+<input type="button" value="Division(/)" onclick="chia()">
+<p id="showR">Result Division: </p>
+<script>
+    function cong() {
+        let a = document.getElementById("n1").value;
+        let b = document.getElementById("n2").value;
+        let c = parseInt(a) + parseInt(b);
+        document.getElementById("showR").innerText = "Result Division: " + c;
+    }
+
+    function tru() {
+        let a = document.getElementById("n1").value;
+        let b = document.getElementById("n2").value;
+        let t = parseInt(a) - parseInt(b);
+        document.getElementById("showR").innerText = "Result Division: " + t;
+    }
+
+    function nhan() {
+        let a = document.getElementById("n1").value;
+        let b = document.getElementById("n2").value;
+        let n = parseInt(a) * parseInt(b);
+        document.getElementById("showR").innerText = "Result Division: " + n;
+    }
+
+    function chia() {
+        let a = document.getElementById("n1").value;
+        let b = document.getElementById("n2").value;
+        let ch = parseInt(a) / parseInt(b);
+        document.getElementById("showR").innerText = "Result Division: " + ch;
+    }
+</script>
+</body>
+</html>

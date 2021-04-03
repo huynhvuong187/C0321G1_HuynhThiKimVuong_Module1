@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--Bài 1-->
+<div>
+    <h1>BẢNG ĐIỂM CỦA HỌC SINH </h1>
+    <input type="number" id="vatly" placeholder="nhapdiemly">
+    <input type="number" id="hoahoc" placeholder="nhapdiemhoa">
+    <input type="number" id="sinhhoc" placeholder="nhapdiemsinh"><br><br>
+    <input type="button" value="tinhTB" onclick="diemTB()">
+    <input type="button" value="Tongdiem" onclick="tongdiem()">
+
+</div>
+<script>
+    function diemTB() {
+        let a = document.getElementById("vatly").value;
+        let b = document.getElementById("hoahoc").value;
+        let c = document.getElementById("sinhhoc").value;
+        let tinhTb = (parseInt(a) + parseInt(b) + parseInt(c)) / 3;
+        alert("Điểm trung bình của học sinh là: " + tinhTb);
+    }
+
+    function tongdiem() {
+        let a = document.getElementById("vatly").value;
+        let b = document.getElementById("hoahoc").value;
+        let c = document.getElementById("sinhhoc").value;
+        let Tong = (parseInt(a) + parseInt(b) + parseInt(c));
+        alert("Tổng điểm của học sinh là: " + Tong);
+    }
+</script>
+<br><br>
+<!--Bài 2-->
+<div>
+    <h1>CHUYỂN ĐỘ C SANG ĐỘ F</h1>
+    <input type="text" id="doC" placeholder="Nhập độ C" oninput="doF()">
+    <p id="hienthi">Độ F: </p>
+</div>
+<script>
+    function doF() {
+        let e = document.getElementById("doC").value;
+        let f = parseInt(e) * 9 / 5 + 32;
+        document.getElementById("hienthi").innerText = f;
+    }
+</script>
+<!--Bai 3 va bai 4-->
+<div>
+    <h1>HINH TRON</h1>
+    <input type="number" id="v" placeholder="hay nhap so">
+    <input type="button" value="chuvihinhtron" onclick="p()">
+    <input type="button" value="dientichhinhtron" onclick="s()">
+</div>
+<script>
+    function p() {
+        let chu = document.getElementById("v").value;
+        let chuvi = parseInt(chu) * 2 * 3.14;
+        alert("Chu vi hinh tron la: " + chuvi)
+    }
+
+    function s() {
+        let dt = document.getElementById("v").value;
+        let dientich = parseInt(dt) ** 2 * 3.14;
+        alert("Dien tich hinh trong la: " + dientich)
+    }
+</script>
+
+</body>
+</html>
