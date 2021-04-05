@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+<style>
+    table{
+       background-color:lawngreen; margin: auto;
+    }
+    #Result{
+        width: 200px;text-align: right;
+    }
+    tr td{
+        width:50px;
+        height: 40px;
+    }
+    #o17{
+        width: 80px;
+    }
+    #o18{
+        width: 80px;
+    }
+
+</style>
+</head>
+<body>
+<div>
+
+</div>
+<table>
+    <tr>
+        <td colspan="4"><input type="button"id="Result"/></td>
+    </tr>
+    <tr>
+        <td> <input type="button" value="1"id="o1"onclick="Result.value+=this.value"></td>
+        <td> <input type="button" value="2"id="o2"onclick="Result.value+=this.value"></td>
+        <td> <input type="button" value="3"id="o3"onclick="Result.value+=this.value"></td>
+        <td> <input type="button" value="+"id="04"onclick="Result.value+=this.value"/></td>
+
+    </tr>
+    <tr>
+        <td> <input type="button" value="3"id="o5"onclick="Result.value+=this.value"></td>
+        <td> <input type="button" value="4"id="o6"onclick="Result.value+=this.value"></td>
+        <td> <input type="button" value="5"id="o7"onclick="Result.value+=this.value"></td>
+        <td> <input type="button" value="-"id="o8"onclick="Result.value+=this.value"></td>
+    </tr>
+    <tr>
+        <td> <input type="button" value="6"id="o9"onclick="Result.value+=this.value"></td>
+        <td> <input type="button" value="7"id="o10"onclick="Result.value+=this.value"></td>
+        <td> <input type="button" value="8"id="o11"onclick="Result.value+=this.value"></td>
+        <td> <input type="button" value="*"id="o12"onclick="Result.value+=this.value"></td>
+    </tr>
+    <tr>
+        <td> <input type="button" value="C"id="o13"onclick="Result.value=''"></td>
+        <td> <input type="button" value="0"id="o14"onclick="Result.value+=this.value"></td>
+        <td> <input type="button" value="."id="o15"onclick="Result.value+=this.value"></td>
+        <td> <input type="button" value="/"id="o16"onclick="Result.value+=this.value"></td>
+    </tr>
+    <tr>
+        <td colspan="2"><input type="button"value="<--"id="o17"onclick="Result.value=Result.value.substr(0,Result.value.length-1)"/></td>
+        <td colspan="2"><input type="button"value="="id="o18"onclick="Result.value=eval(Result.value)"/></td>
+
+    </tr>
+    <script>
+
+    </script>
+</table>
+</body>
+</html>

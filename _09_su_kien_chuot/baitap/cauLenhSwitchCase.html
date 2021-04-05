@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="text" id="type1"/>
+<input type="button"value="Tinh So Ngay"onclick="check1()">
+<p id="date">So ngay la: </p>
+<br>
+<input type="number"id="type2"/>
+<input type="button"value="Tinh So Ngay"onclick="check2()">
+<p id="date2">So ngay la: </p>
+<script>
+    function check1() {
+        let a=document.getElementById("type1").value;
+        switch (a) {
+            case "1":
+                document.getElementById("date").innerText ="So ngay la: "+31;
+                break;
+            case "2":
+                document.getElementById("date").innerText = "So ngay la: " + 29;
+                break;
+            case "3":
+                document.getElementById("date").innerText = "So ngay la: " + 30;
+                break;
+            case "4":
+                document.getElementById("date").innerText = "So ngay la: " + 30;
+                break;
+            case "5":
+                document.getElementById("date").innerText = "So ngay la: " + 31;
+                break;
+            case "6":
+                document.getElementById("date").innerText = ("So ngay la: " + 30);
+                break;
+            case "7":
+                document.getElementById("date").innerText = ("So ngay la: " + 31);
+                break;
+            case "8":
+                document.getElementById("date").innerText = "So ngay la: " + 31;
+                break;
+            case "9":
+                document.getElementById("date").innerText = "So ngay la: " + 30;
+                break;
+            case "10":
+                document.getElementById("date").innerText = "So ngay la: " + 31;
+                break;
+            case "11":
+                document.getElementById("date").innerText = "So ngay la: " + 30;
+                break;
+            case "12":
+                document.getElementById("date").innerText = "So ngay la: " + 31;
+                break;
+            default:
+                document.getElementById("date").innerText = "khong xac dinh";
+
+        }
+    }
+    function check2() {
+        let a=document.getElementById("type2").value;
+        switch (a) {
+            case "1":
+                document.getElementById("date2").innerText ="So ngay la: "+31;
+                break;
+            case "2":
+                document.getElementById("date2").innerText = "So ngay la: " + 29;
+                break;
+            case "3":
+                document.getElementById("date2").innerText = "So ngay la: " + 30;
+                break;
+            case "4":
+                document.getElementById("date2").innerText = "So ngay la: " + 30;
+                break;
+            case "5":
+                document.getElementById("date2").innerText = "So ngay la: " + 31;
+                break;
+            case "6":
+                document.getElementById("date2").innerText = ("So ngay la: " + 30);
+                break;
+            case "7":
+                document.getElementById("date2").innerText = ("So ngay la: " + 31);
+                break;
+            case "8":
+                document.getElementById("date2").innerText = "So ngay la: " + 31;
+                break;
+            case "9":
+                document.getElementById("date2").innerText = "So ngay la: " + 30;
+                break;
+            case "10":
+                document.getElementById("date2").innerText = "So ngay la: " + 31;
+                break;
+            case "11":
+                document.getElementById("date2").innerText = "So ngay la: " + 30;
+                break;
+            case "12":
+                document.getElementById("date2").innerText = "So ngay la: " + 31;
+                break;
+            default:
+                document.getElementById("date2").innerText = "khong xac dinh";
+
+        }
+    }
+</script>
+</body>
+</html>
