@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+
+
+    //bai1
+
+    // let a= prompt("type of a");
+    // let b=prompt("type of b");
+    // let c=parseInt(a%b);
+    // if(c==0){
+    //     alert("b chia het cho a");
+    // }
+
+
+    //bai2
+
+    // let t=prompt("type of age");
+    // if(t<16){
+    //     alert(" khong du dieu kien hoc lop 10");
+    // }
+    //bai3
+    // let b3 = prompt("type of num")
+    // if (b3 > 0) {
+    //    alert("so nhap vao lon hon khong");
+    // } else if (b3 != 0) {
+    //     alert("so nhap vao nho hon khong");
+    // } else {
+    //     alert("khong xac dinh");
+    // }
+
+
+    //bai4
+
+    // let a4 = prompt("type of a4");
+    // let b4 = prompt("type of b4");
+    // let c4 = prompt("type of c4")
+    // if (a4 > b4) {
+    //     if (a4 > c4) {
+    //         alert("a4 max: " + a4);
+    //     } else {
+    //         alert("c4 max" + c4);
+    //
+    //     }
+    // } else if (b4 > c4) {
+    //     alert("b4 max: " + b4);
+    // } else {
+    //     alert(" c4 max: " + c4);
+    // }
+
+
+    //bai5
+
+    // let a5=prompt("nhap diem kiem tra");
+    // let b5=prompt("nhap diem kiem tra giua ky");
+    // let c5=prompt("nhap diem kiem tra cuoi ky");
+    // let tb=(a5+b5*2+c5*3)/5;
+    // if (tb>=8){
+    //     alert("hoc sinh gioi");
+    // }else if(tb>6.5){
+    //     alert("hoc sinh kha");
+    // }else if(tb>4.5){
+    //     alert("hoc sinh trung binh");
+    // }else{
+    //     alert("hoc sinh yeu")
+    // }
+
+
+    //bai6
+
+    // let a5=prompt("nhap vao doanh so ban hang cua nhan vien");
+    // if(a5>500000){
+    //     alert("tien hoa hong nhan vie nhan duoc la:"+1/10*a5);
+    // }else if( a5>200000){
+    //     alert("tien hoa hong nhan vien nhan duoc la: "+1/20*a5);
+    // }else {
+    //     alert("tien hoa hong nhan vien nhan duoc la: "+3/100*a5)
+    // }
+
+    //bai7
+
+    const phi_tb=25000;
+    let a7=prompt("nhap so phut goi trong thang");
+    if(a7<=50){
+        alert("so tien dong cuoc la: "+parseInt(phi_tb+a7*600));
+    }else if(a7<200){
+        alert("so tien dong cuoc la: " +parseInt(phi_tb+(50*600)+((a7-50)*400)));
+    }else{
+        alert("so tien dong cuoc la: "+parseInt(phi_tb+(50*600)+(150*400)+(a7-200)*200));
+    }
+</script>
+</body>
+</html>
