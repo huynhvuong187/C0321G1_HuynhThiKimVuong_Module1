@@ -2,7 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c5e03dbd-d2e8-4d48-a893-4358aafce2a8" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../../_09_cau_truc_dieu_kien2/baitap/good_fast_cheap.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../_09_cau_truc_dieu_kien2/baitap/good_fast_cheap.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../_10_cau_truc_lap/thuchanh/doWhileSimple.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../_10_cau_truc_lap/thuchanh/suDungVongLapFor.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../_10_cau_truc_lap/thuchanh/vongLapLongNhau.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../_10_cau_truc_lap/thuchanh/vongLapWhile.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,11 +35,12 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="full.screen.before.presentation.mode" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../_09_cau_truc_dieu_kien2/baitap" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../_10_cau_truc_lap/baitap" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\C0321G1_HuynhThiKimVuong_Module1\_10_cau_truc_lap\thuchanh" />
       <recent name="D:\C0321G1_HuynhThiKimVuong_Module1\_09_cau_truc_dieu_kien2\baitap" />
       <recent name="D:\C0321G1_HuynhThiKimVuong_Module1\_09_su_kien_chuot\baitap" />
     </key>
@@ -52,7 +57,10 @@
       <workItem from="1617609592518" duration="8143000" />
       <workItem from="1617628662202" duration="12348000" />
       <workItem from="1617671504028" duration="24269000" />
-      <workItem from="1617714270757" duration="4096000" />
+      <workItem from="1617714270757" duration="4412000" />
+      <workItem from="1617724375998" duration="4096000" />
+      <workItem from="1617758040592" duration="6144000" />
+      <workItem from="1617775727187" duration="73000" />
     </task>
     <servers />
   </component>
