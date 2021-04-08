@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        #R1 {
+            width: 200px;
+            height: 80px;
+            margin-left: 400px;
+            background: lightsalmon;
+        }
+
+        #R2 {
+            width: 200px;
+            height: 80px;
+            margin-left: 400px;
+            background: lightsalmon;
+        }
+    </style>
+
+</head>
+<body>
+
+    <input id="R1" type="button" value="PLAY" onClick="letgo()">
+<br><br>
+    <input id="R2" type="button" value="PLAY" onClick="letgo()">
+<script>
+    function letgo() {
+        let max = parseInt(prompt("nhập max"));
+        let min = parseInt(prompt("nhập min"));
+        a = Math.round(Math.random() * (max + min - 1)) - min;
+        solan = 0;
+        do {
+            let b = parseInt(prompt("Nhâp số của bạn"));
+            if (b > a) {
+                alert("số của bạn lớn hơn số đã chọn");
+            } else if (b < a) {
+                alert("số của bạn nhỏ hơn số đã chọn");
+            } else {
+                alert("Chúc mừng! Bạn đã chiến thắng");
+                break;
+            }
+           solan++;
+        } while (solan < 3);
+    }
+</script>
+</body>
+</html>

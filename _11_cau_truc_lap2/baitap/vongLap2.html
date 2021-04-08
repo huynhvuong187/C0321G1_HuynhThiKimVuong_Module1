@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    // bai 1 in day finonaci
+    // let i=prompt("hay nhap  vao so luong so trong day Finonaci ma ban muon in ra")
+    // let count=0;
+    // let a=0;
+    // let b=1;
+    // let c;
+    // while(count<i){
+    //     c=a;
+    //     a=a+b;
+    //     b=c;
+    //     console.log(c);
+    //     count++;
+    // }
+
+    //bai 2 tinh giai thua cua so nguyen duong
+
+   //  let pro =1;
+   //  let i = 1;
+   //  let n = prompt("nhap vao so nguyen duong ban muon tim giai thua");
+   // do{
+   //     console.log(i);
+   //     pro=pro*i;
+   //     i++;
+   // }while(i<n);
+   //  document.write(pro);
+
+    // bai 3 in tam giac vuong co goc vuong nam o vi tri khac nhau
+
+    // hinh 1
+   // for(let i=1;i<6;i++){
+   //     for(let j=0;j<i;j++){
+   //         document.write("*");
+   //     } document.write("<br>");
+   // }
+
+   // hinh 2
+   //  for(let i=1;i<6;i++){
+   //      for(let j=i;j<6;j++){
+   //          document.write("*");
+   //      } document.write("<br>");
+   //  }
+    // hinh 2 cach 2
+    // for(let i=1;i<6;i++){
+    //     for(let j=5;j>=i;j--){
+    //         document.write("*");
+    //              } document.write("<br>");
+    // }
+
+
+    //hinh 3
+    // for (let i=0;i<6;i++) {
+    //     for (let j=1; j<=6; j++) {
+    //         if (j>=6-i){
+    //             document.write("*")
+    //         }else{
+    //             document.write("&nbsp&nbsp")
+    //         }
+    //     }
+    //     document.write("<br>");
+    // }
+
+    // hinh tam giac nguoc
+
+    // for (let i=0;i<6;i++) {
+    //     for (let j=6; j>i; j--) {
+    //         if (j<=6-i){
+    //             document.write("*")
+    //         }else{
+    //             document.write("&nbsp&nbsp")
+    //         }
+    //     }
+    //     document.write("<br>");
+    // }
+
+    // hinh chu x
+    // for (let i=1;i<6;i++) {
+    //     for (let j=1; j<=6; j++) {
+    //         if (j>=6-i){
+    //             document.write("*")
+    //         }else{
+    //             document.write("&nbsp&nbsp")
+    //         }
+    //     }
+    //     document.write("<br>");
+    // }
+
+    // hinh 4
+
+    // for (let i=0;i<=6;i++) {
+    //     for (let j=6; j>0; j--) {
+    //         if (j>6-i){
+    //             document.write("&nbsp&nbsp")
+    //         }else{
+    //             document.write("*")
+    //         }
+    //     }
+    //     document.write("<br>");
+    // }
+    //
+
+    // in hinh chu nhat
+
+    // for (let i = 0; i <= 6; i++) {
+    //     for (let j = 0; j <= 20; j++) {
+    //         if (i == 0 || i == 6 || j == 0 || j == 20) {
+    //             document.write("*");
+    //         } else {
+    //             document.write("&nbsp&nbsp");
+    //         }
+    //
+    //     }
+    //     document.write("<br>");
+    // }
+
+    // bai tinh lai ngan hang
+
+    let a=parseInt(prompt("hay nhap so tien ban du dinh se gui"));
+    const lai=0.06;
+    let st=parseInt(prompt("hay nhap vao so thang ban du dinh se gui"));
+    let tamtinh;
+    for(let i=1;i<=st;i++){
+        tamtinh=a*lai+a;
+        a = tamtinh;
+    }
+    document.write("so tien ban nhan duoc la: "+tamtinh);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
+</body>
+</html>
