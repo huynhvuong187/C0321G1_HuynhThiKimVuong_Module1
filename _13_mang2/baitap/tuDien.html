@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dictionary</title>
+</head>
+<body>
+<div>
+    <input type="text" id="input" placeholder="type of text">
+    <input type="button" id="button" value="search" onclick="search()">
+    <p id="result"></p>
+</div>
+</body>
+<script>
+    let arrEng = ["nice to meet you", "you are so beautiful", "great", "i want it i got it"];
+    let arrVnese = ["rat vui khi gap ban", "ban that xinh dep", "tuyet voi", " toi se co no neu toi muon no"];
+    function search(){
+        let a = document.getElementById('input').value;
+        for (let i = 0; i < arrEng.length; i++){
+            if (arrEng[i] == a){
+                document.getElementById('result').innerText = arrVnese[i];
+                document.getElementById('input').value = "";
+                return;
+            }
+        }
+        alert("khong tim thay");
+        document.getElementById('input').value = "";
+    }
+
+
+</script>
+</html>

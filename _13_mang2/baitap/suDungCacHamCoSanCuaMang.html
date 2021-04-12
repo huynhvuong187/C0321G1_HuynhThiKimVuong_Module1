@@ -6,23 +6,44 @@
 </head>
 <body>
 <script>
-    let myColor=["Red","Green","Black","White"];
-    let b=[myColor.join(",")];
-    console.log(b);
+    // bai 1
 
-    //bai2
+    // let myColor=["Red","Green","Black","White"];
+    // let b=[myColor.join(",")];
+    // console.log(b);
 
-    // let a=[0,2,5,4,6,8];
-    // let c=[a.toString()];
-    //
-    // for(let i=0;i<6;i++){
+    //bai 2
+
+    // let a=[0,2,3,4,6,7];
+    // let a1=[a[0]];
+    // let b=[];
+    // for(let i=1;i<6;i++){
     //     if((a[i-1]%2===0)&&a[i]%2===0){
-    //
-    //        console.log(c.push("-"+c))
+    //       a1.push("-"+a[i])
     //     }else{
-    //         console.log(c)
+    //         a1.push(a[i]);
     //     }
-    // }
+    // }b=a1.join("");
+    // console.log(b);
+
+
+    // bai 3
+    let str = 'The Quick Brown Fox';
+    let UPPER = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+    let LOWER = 'abcdefghijklmnopqrstuvwxyz';
+    let result = [];
+
+    for(let x=0; x<str.length; x++)
+    {
+        if(UPPER.indexOf(str[x]) !== -1)
+        {
+            result.push(str[x].toLowerCase());
+        }
+        else{
+            result.push(str[x].toUpperCase());
+        }
+    }
+    console.log(result.join(''));
 
 </script>
 </body>
