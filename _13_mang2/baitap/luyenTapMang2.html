@@ -39,8 +39,8 @@
 
 
     //bai 3 Viết một chương trình khai báo một mảng ký tự và kích thước của mảng.
-
     // Chương trình này đếm số ký tự số trong mảng.
+
     // let n;
     // do{
     //     n=prompt("nhap vao so luong phan tu trong mang");
@@ -56,46 +56,43 @@
 
 
     // bai 4 Viết một chương trình để đếm số từ trong một chuỗi
+    let b = 'ah dz ch3 cd n';
+    let c = b.split(" ");
+    let count = 0;
+    for (let i = 0; i < c.length; i++) {
+        if (isNaN(c[i])) {
+            count += 1;
+        }
+    }
+    alert(count);
 
-    // let b=new Array(5);
-    // for (let i=0;i<5;i++) {
-    //     b[i] = prompt("nhap vao gia tri phan tu thu: " + i);
-    // }
+    //cach 2
+
+
 
 
 
     // bai 5 Viết một chương trình nhập vào 2 chuỗi, sau đó kiểm tra xem hai chuỗi có giống nhau hay không
-
-    // let b=new Array(3);
-    // for (let i=0;i<3;i++) {
-    //     b[i] = prompt("nhap vao gia tri phan tu thu: " + i);
-    // }
-    // b=b.join("");
-    // console.log(b);
-    // let c=new Array(3);
-    // for (let i=0;i<3;i++) {
-    //     c[i] = prompt("nhap vao gia tri phan tu thu: " + i);
-    // }
-    // c=c.join("");
-    // console.log(c);
-    // if(b==c){
-    //     alert("hai chuoi vua nhap giong nhau");
+    // let b='ahdzch3cdn';
+    // let c='ahdzch2cdn';
+    // let d=b.localeCompare(c);
+    // if (d===0){
+    //     alert("hai chuoi giong nhau");
     // }else{
-    //     alert("hai chuoi vua nhap khac nhau");
+    //     alert("hai chuoi khac nhau")
     // }
-
 
     //cach 2
-    let b=Array.from('ahdzch3cdn');
-    let c=Array.from('ahdzch2cdn');
-    if(b.length!==c.length){
-        alert("hai chuoi vua nhap khac nhau");
-    }else{
-        for(let i=0;i<b.length;i++){
-            b[i]=c[i];
-        }
-        alert("hai chuoi vua nhap giong nhau");
-    }
+    // let b='ahdzch3cdn';
+    // let c='ahdzch2cdn';
+    // if(b.length!==c.length){
+    //     alert("hai chuoi vua nhap khac nhau");
+    // }else{
+    //     for(let i=0;i<b.length;i++){
+    //         b[i]=c[i];
+    //     }
+    //     alert("hai chuoi vua nhap giong nhau");
+    // }
 
 
 
