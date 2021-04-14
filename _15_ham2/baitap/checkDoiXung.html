@@ -8,17 +8,17 @@
 <script>
     // cach 1
 
-    // function checkDoiXung(){
-    //     for(let i=0;i<b.length/2;i++){
-    //         if(b[i]!=b[b.length-1-i]){
-    //             return false;
-    //         }else{
-    //             return true
-    //         }
-    //     }
-    // }
-    // let b=[2,7,9,9,7,2];
-    // alert(checkDoiXung(b));
+    function checkDoiXung(){
+        for(let i=0;i<b.length/2;i++){
+            if(b[i]!=b[b.length-1-i]){
+                return false;
+            }else{
+                return true
+            }
+        }
+    }
+    let b=[2,7,9,9,7,2];
+    alert(checkDoiXung(b));
 
     //  cach 2
 
@@ -36,6 +36,7 @@
     }
     let b = [2, 7, 9, 9, 7, 1];
     alert(checkDoiXung(b));
+
 
 </script>
 </body>
