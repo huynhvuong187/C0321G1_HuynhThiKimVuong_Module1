@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+
+    //Bài 7: Viết hàm truyền vào 2 số nguyên bất kì, thực hiện đổi chỗ hai số nguyên đó.
+
+    function displace(a,b){
+        let c=a;
+        a=b;
+        b=c;
+        document.write("sau hoan doi n1 se la: "+a+" " +" sau hoan doi n2 se la: "+b);
+    }
+    let n1=prompt("hay nhap vao so nguyen bat ki");
+    let n2=prompt("hay nhap vao so nguyen bat ki");
+    displace(n1,n2);
+</script>
+</body>
+</html>

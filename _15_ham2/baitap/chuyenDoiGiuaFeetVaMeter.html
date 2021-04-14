@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function changeFeToMe() {
+        Me = 0.305 * Fe;
+        return Me;
+    }
+
+    function changeMeToFe() {
+        Fe = 3.279 * Me;
+        return Fe;
+    }
+
+    let Fe = prompt("hay nhap vao so feet ban muon qui doi qua met");
+    let Me = prompt("hay nhap vao so met ban muon qui doi sang feet");
+    changeFeToMe(Fe);
+    alert("so met qui doi tu Feet qua la: " + Me);
+    changeMeToFe(Me);
+    alert("so feet chuyen doi tu met qua la: " + Fe);
+
+</script>
+</body>
+</html>

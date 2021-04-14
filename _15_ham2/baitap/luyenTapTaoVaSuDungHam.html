@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+   // Bài 1: Tạo hàm alertMessage() hiển thị hộp thoại chứa chuỗi  "Xin chao".
+   // Gọi hàm từ trong phần <body> của trang web.
+   // function displayMessage(message){
+   //     alert(message);
+   // }
+   // displayMessage("Xin Chao");
+
+
+   // bai 2 Tạo hàm nhận vào một đối số dạng số, tăng giá trị đối số đó lên 1 và trả lại giá trị cho lời gọi hàm.
+   // Gọi hàm từ trong phần <body> của trang web và hiển thị kết quả lên màn hình.
+   // function tangGT(n){
+   //     n++;
+   //     alert("gia tri trong ham: "+n);
+   // }
+   // let n=3;
+   // tangGT(n);
+   // alert("gia tri ngoai ham: "+n);
+
+
+   //bai 3  Tạo hàm nhận vào hai tham số.
+   // Nếu giá trị của tham số thứ nhất lớn hơn tham số thứ hai, hiển thị hộp thoại thông báo cho người dùng
+   // . Nếu giá trị của tham số thứ nhất nhỏ hơn hoặc bằng tham số thứ hai, trả về tổng của hai tham số.
+
+   // function soSanhThamSo(a,b){
+   //       let sum=0;
+   //     if(a>b){
+   //         alert("so a lon hon b");
+   //     }else{
+   //         sum=a+b;
+   //         return sum;
+   //     }
+   // }
+   // let a=4;
+   // let b=6;
+   // soSanhThamSo(a,b);
+   // alert(sum);
+
+   // bai 4 them alert vao vi tri thich hop
+
+   // function addNumbers() {
+   //     firstNum = 4;
+   //     secondNum = 8;
+   //     result = firstNum + secondNum;
+   //     return result;
+   // }
+   // result = 0;
+   // alert(result);
+   // result = addNumbers();
+   // alert(result);
+
+   // bai 5 tim chom sao khi co ngoi sao
+
+   let ngoisao = ["Polaris", "Aldebaran", "Deneb", "Vega", "Altair", "Dubhe", "Regulus"];
+   let chomsao = ["UrsaMinor", "Tarurus", "Cygnus", "Lyra", "Aquila", "UrsaMajor", "Leo"];
+
+   function findName() {
+       let a = prompt("hay nhap vao ten ngoi sao");
+       let i;
+       for (i = 0; i < ngoisao.length; i++) {
+           if (a === ngoisao[i]) {
+               alert(chomsao[i]);
+           }
+       }
+       if (a !== ngoisao[i]) {
+           alert("khong tim thay ngoi sao ban dang tim");
+       }
+   }
+
+   findName();
+
+</script>
+</body>
+</html>

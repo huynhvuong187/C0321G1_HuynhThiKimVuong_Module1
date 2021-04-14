@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    // cach 1
+
+    // function checkDoiXung(){
+    //     for(let i=0;i<b.length/2;i++){
+    //         if(b[i]!=b[b.length-1-i]){
+    //             return false;
+    //         }else{
+    //             return true
+    //         }
+    //     }
+    // }
+    // let b=[2,7,9,9,7,2];
+    // alert(checkDoiXung(b));
+
+    //  cach 2
+
+    function checkDoiXung() {
+        let first = 0;
+        let last = b.length - 1;
+        if (first >= last) {
+            return true;
+        } else if (b[first] != b[last]) {
+            return false;
+        } else {
+            b = b.slice(1, b.length - 1);
+            return checkDoiXung();
+        }
+    }
+    let b = [2, 7, 9, 9, 7, 1];
+    alert(checkDoiXung(b));
+
+</script>
+</body>
+</html>
