@@ -5,6 +5,7 @@
     <title>mo ta hinh chu nhat</title>
 </head>
 <body>
+<canvas id="myCanvas" width="200px" height="100px"></canvas>
 <script>
     class Rectangle {
         constructor(chieudai, chieurong,chuvi,dientich) {
@@ -37,7 +38,7 @@
             return this.chieurong * this.chieudai;
         }
 
-    };
+    }
 
     let chunhat = new Rectangle(4, 5);
     let chieudai = chunhat.getChieudai();
@@ -54,10 +55,14 @@
     document.write("chieu dai2: " + chunhat2.getChieudai() + "; chieu rong2: " + chunhat2.getChieurong() + " ; chu vi2: " + chunhat2.getChuvi() + "; dien tich2: " + chunhat2.getDientich()+'<br><br>');
 
 
-    chieudai = chunhat.setChieudai(10);
-    chieurong = chunhat.setChieurong(15);
+    chieudai = chunhat.setChieudai(180);
+    chieurong = chunhat.setChieurong(250);
 
     document.write("chieu dai3: " + chunhat.getChieudai() + "; chieu rong3: " + chunhat.getChieurong() + " ; chu vi3: " + chunhat.getChuvi() + "; dien tich3: " + chunhat.getDientich());
+    let c = document.getElementById("myCanvas");
+    let ctx = c.getContext("2d");
+    ctx.fillStyle='#fa4b2a';
+    ctx.fillRect(20, 20,chunhat.getChieurong(), chunhat.getChieudai());
 
 </script>
 </body>

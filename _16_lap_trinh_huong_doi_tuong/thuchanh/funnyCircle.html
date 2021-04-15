@@ -5,7 +5,7 @@
     <title>funny circle</title>
 </head>
 <body>
-<canvas id="myCanvas" width="1368px" height="768px" style="border:1px solid #d3d3d3;"/>
+<canvas id="myCanvas" width="1368px" height="768px" style="border:1px solid #d3d3d3;"></canvas>
 <script>
     function Circle(x, y, radius){
         this.x = x;
@@ -38,7 +38,7 @@
     }
 
     function createMultipleCircle(){
-        for(var i = 0; i < 30; i++){
+        for(let i = 0; i < 30; i++){
             createCircle();
         }
     }

@@ -6,33 +6,64 @@
 </head>
 <body>
 <script>
-    let MyDate = function(day, month, year) {
+    // cach 1 tao Function
 
-        this.day = day;
+    // let MyDate = function(day, month, year) {
+    //
+    //     this.day = day;
+    //
+    //     this.month = month;
+    //
+    //     this.year = year;
+    //
+    //     this.getDay = function () {
+    //         return this.day;
+    //     }
+    //     this.getMonth = function () {
+    //         return this.month;
+    //     }
+    //     this.getYear = function () {
+    //         return this.year;
+    //     }
+    //     this.setDay = function (day) {
+    //         this.day = day;
+    //     }
+    //     this.setMonth = function (month) {
+    //         this.month = month;
+    //     }
+    //     this.setYear = function (year) {
+    //         this.year = year;
+    //     }
+    // };
 
-        this.month = month;
+    // cach 2 dung class
+    class MyDate{
+        constructor(day,month,year) {
+            this.day=day;
+            this.month=month;
+            this.year=year;
 
-        this.year = year;
-
-        this.getDay = function () {
+        }
+        getDay(){
             return this.day;
         }
-        this.getMonth = function () {
+        setDay(day){
+            this.day=day;
+        }
+        getMonth(){
             return this.month;
         }
-        this.getYear = function () {
-            return this.year;
+        setMonth(month){
+            this.month=month;
         }
-        this.setDay = function (day) {
-            this.day = day;
+        getYear(){
+            return  this.year;
         }
-        this.setMonth = function (month) {
-            this.month = month;
+        setYear(year){
+            this.year=year;
         }
-        this.setYear = function (year) {
-            this.year = year;
-        }
-    };
+
+    }
     let date = new MyDate(2, 2, 2007);
     let day = date.getDay();
 
