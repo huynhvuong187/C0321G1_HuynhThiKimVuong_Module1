@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>lop mo ta temperature</title>
+</head>
+<body>
+<script>
+    class Temperature{
+        constructor(doC) {
+
+            this.doC = doC;
+
+        }
+    getDoC(){
+           return  this.doC;
+    }
+    getDoF(){
+            return this.doC*9/5+32;
+    }
+    getDoK(){
+            return this.doC+273.15;
+    }
+
+    }
+    let nhietdo;
+
+    // do{
+    //     nhietdo=new Temperature(parseInt(prompt("hay nhap nhiet do ban muon chuyen doi")));
+    //     console.log(nhietdo);
+    //
+    //     if(nhietdo.getDoC() < -273){
+    //         alert("hay nhap lai");
+    //     }else {
+    //
+    //         break;
+    //     }
+    //
+    // }while(true);
+
+    do {
+        nhietdo = parseInt(prompt("hay nhap nhiet do ban muon chuyen doi"));
+        if (nhietdo < -273) {
+            alert("hay nhap lai nhiet do tren -273 do");
+        } else {
+            break;
+        }
+    } while (true);
+    let temp = new Temperature(nhietdo);
+
+    let doc = temp.getDoC();
+    let dof = temp.getDoF();
+    let dok = temp.getDoK();
+
+    alert("do c la: "+doc+";do f la: "+dof+";do k la: "+dok);
+</script>
+</body>
+</html>

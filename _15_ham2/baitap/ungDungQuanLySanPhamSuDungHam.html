@@ -9,7 +9,7 @@
 <h1> ADD NEW PRODUCT</h1>
 <form>
     <input type="text" placeholder="New product" id="nhap"/>
-    <input style="background-color: green" type="button" value="ADD" onclick="run()"/>
+    <input style="background-color: green" type="button" value="ADD" onclick="add()"/>
 </form>
 <h1> Display All Product</h1>
 <p> Product Name </p>
@@ -17,9 +17,11 @@
 <script>
     let a = [];
 
-    function run() {
+    function add() {
         let b = document.getElementById("nhap").value;
-        a.push(b);
+        if (b !== ""&&a.includes(b)===false) {
+            a.push(b);
+        }
         hienThi();
     }
 
@@ -48,7 +50,7 @@
             a.splice(n, 1);
             hienThi();
         }
-        
+
 }
 </script>
 

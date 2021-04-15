@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>mo ta hinh chu nhat</title>
+</head>
+<body>
+<script>
+    class Rectangle {
+        constructor(chieudai, chieurong,chuvi,dientich) {
+            this.chieudai = chieudai;
+            this.chieurong = chieurong;
+
+        }
+
+        getChieudai() {
+            return this.chieudai;
+        }
+
+        setChieudai(chieudai) {
+            this.chieudai = chieudai;
+        }
+
+        getChieurong() {
+            return this.chieurong;
+        }
+
+        setChieurong(chieurong) {
+            this.chieurong = chieurong;
+        }
+
+        getChuvi() {
+            return (this.chieudai + this.chieurong) * 2;
+        }
+
+        getDientich() {
+            return this.chieurong * this.chieudai;
+        }
+
+    };
+
+    let chunhat = new Rectangle(4, 5);
+    let chieudai = chunhat.getChieudai();
+    let chieurong = chunhat.getChieurong();
+    let chuvi = chunhat.getChuvi();
+    let dientich = chunhat.getDientich();
+    document.write("chieu dai: " + chieudai + "; chieu rong: " + chieurong + " ; chu vi: " + chuvi + "; dien tich: " + dientich + "<br><br>");
+
+
+    let chunhat2 = new Rectangle(8, 10)
+    chunhat2.setChieudai(8);
+    chunhat2.setChieurong(10);
+
+    document.write("chieu dai2: " + chunhat2.getChieudai() + "; chieu rong2: " + chunhat2.getChieurong() + " ; chu vi2: " + chunhat2.getChuvi() + "; dien tich2: " + chunhat2.getDientich()+'<br><br>');
+
+
+    chieudai = chunhat.setChieudai(10);
+    chieurong = chunhat.setChieurong(15);
+
+    document.write("chieu dai3: " + chunhat.getChieudai() + "; chieu rong3: " + chunhat.getChieurong() + " ; chu vi3: " + chunhat.getChuvi() + "; dien tich3: " + chunhat.getDientich());
+
+</script>
+</body>
+</html>

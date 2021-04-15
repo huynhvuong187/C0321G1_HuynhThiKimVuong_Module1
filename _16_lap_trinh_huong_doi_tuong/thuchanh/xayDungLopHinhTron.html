@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>circle class</title>
+</head>
+<body>
+<script>
+
+//    let Circle = function (radius) {
+//
+//        this.radius = radius;
+//        this.getRadius = function () {
+//            return radius;
+//        }
+//        this.getArea = function () {
+//            return Math.PI * radius * radius;
+//        }
+//    };
+
+class Circle{
+    constructor(radius,color) {
+        this.radius=radius;
+        this.color=color;
+    }
+    getColor(){
+        return  this.color;
+    }
+
+    getRadius(){
+        return this.radius;
+    }
+    getArea(){
+        return Math.PI*this.radius*this.radius;
+    }
+};
+    let circle = new Circle(4,"red");
+    let radius = circle.getRadius();
+    let area = circle.getArea();
+    let color=circle.getColor();
+    alert("radius: " + radius + "; area: " + area +"; color:"+color);
+
+
+</script>
+</body>
+</html>

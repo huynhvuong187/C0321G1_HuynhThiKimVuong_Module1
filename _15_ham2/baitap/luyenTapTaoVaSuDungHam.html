@@ -64,14 +64,17 @@
    function findName() {
        let a = prompt("hay nhap vao ten ngoi sao");
        let i;
+       let count=0;
        for (i = 0; i < ngoisao.length; i++) {
            if (a === ngoisao[i]) {
                alert(chomsao[i]);
+               count+=1;
            }
        }
-       if (a !== ngoisao[i]) {
-           alert("khong tim thay ngoi sao ban dang tim");
+       if(count===0){
+          alert( "khong tim thay ngoi sao");
        }
+
    }
 
    findName();
