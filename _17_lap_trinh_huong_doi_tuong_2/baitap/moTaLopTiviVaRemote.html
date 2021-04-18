@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> sử dụng Remote để điều khiển </title>
+</head>
+<body>
+<script>
+    class Tivi{
+        constructor(kenh,amluong,trangthai) {
+            this._kenh = kenh;
+            this._amluong = amluong;
+            this._trangthai = trangthai;
+        }
+
+
+        getKenh() {
+            return this._kenh;
+        }
+
+        setKenh(value) {
+            this._kenh = value;
+        }
+        toStringKenh(){
+           return " hien tivi dang o kenh: "+this._kenh;
+        }
+
+        getAmluong() {
+            return this._amluong;
+        }
+
+        setAmluong(value) {
+            this._amluong = value;
+        }
+
+        getTrangthai() {
+            return this._trangthai;
+        }
+
+        setTrangthai(value) {
+            this._trangthai = value;
+        }
+        toStringStatus(){
+            return " hien tivi dang: "+this._trangthai;
+        }
+    }
+    class Remote{
+        constructor(ma) {
+            this._ma = ma;
+        }
+
+        getMa() {
+            return this._ma;
+        }
+
+        setMa(value) {
+            this._ma = value;
+        }
+        toStringMa(){
+           return " ti vi da bat sang kenh: "+this._ma;
+        }
+    }
+    let tivi = new Tivi(3,5,"On");
+    let remote= new Remote("kenh1");
+    function control(){
+        let amluongtivi;
+        tivi.getTrangthai();
+        alert(tivi.toStringStatus());
+        tivi.setKenh('7');
+        alert (tivi.toStringKenh());
+        remote.setMa("kenh3");
+        alert(remote.toStringMa());
+        amluongtivi=tivi.getAmluong()+2;
+        alert(" am luong ti vi la: " +amluongtivi);
+        tivi.setTrangthai('Off');
+        alert (tivi.toStringStatus());
+
+    }
+    control();
+</script>
+</body>
+</html>

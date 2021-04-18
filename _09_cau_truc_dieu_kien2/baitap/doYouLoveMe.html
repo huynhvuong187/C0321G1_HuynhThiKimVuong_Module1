@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>do you love me</title>
+    <style>
+        #jump {
+            position: relative;
+            top: 0px;
+            left: 5px;
+        }
+    </style>
+</head>
+<body>
+<h1> Do you love me </h1>
+<input type="button"value="Yes"onclick="click1()"/>
+<input id="jump" type ="button" value="No"onmouseover="over()"/>
+<script>
+    function click1(){
+        alert("<3");
+    }
+    function over(){
+        let a= document.getElementById("jump");
+        a.style.top =(Math.random()*window.innerHeight)+"px";
+        if(a.style.top> window.innerHeight ||a.style.top<= window.innerHeight ){
+            a.style.top=400 +"px";
+        }
+        a.style.left=(Math.random()*window.innerWidth)+"px";
+        if (a.style.left>window.innerWidth||a.style.left<=window.innerWidth){
+            a.style.left=600+"px";
+        }
+
+    }
+
+</script>
+
+
+</body>
+</html>
