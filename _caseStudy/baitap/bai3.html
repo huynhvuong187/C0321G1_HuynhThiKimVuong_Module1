@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    // let n=prompt("hay nhap so luong phan tu cua mang ban muon tao");
+    // let arr=[];
+    // for(let i=0;i<n;i++){
+    //     arr[i]=parseInt(prompt('nhap vao phan tu thu: '+i));
+    // }
+    // alert(arr);
+    // let b=[];
+    // b[0]=arr[0];
+    // let sum=arr[0];
+    // for(let i=1;i<arr.length;i++){
+    //     sum+=arr[i];
+    //     b[i]=sum;
+    // }alert(b);
+
+   // Bài 2: Cho 2 mảng A và B chứa số nguyên. Tìm ra một mảng đã được sắp xếp chứa các phần tử xuất hiện
+    // trong mảng B nhưng lại không xuất hiện A
+    //Chú ý các phần tử giống nhau chỉ tính là 1 lần xuất hiện
+    //Ví dụ:  A=[7,2,5,3,5,3] và B=[7,2,5,4,6,3,5,3] thì kết quả missingValue(A, B) = [4, 6]
+
+    // let a=[7,2,5,3,5,3];
+    // let b=[7,2,10,10,6,5,4,3,5,3];
+    // let c=[];
+    // let d=[];
+    // for (let j = 0; j < b.length; j++) {
+    //     if (a.includes(b[j])) {
+    //         if (!c.includes(b[j])) {
+    //             c.push(b[j]);
+    //         }
+    //
+    //     } else {
+    //         if (!d.includes(b[j])) {
+    //             d.push(b[j]);
+    //         }
+    //     }
+    // }
+    // c.sort(function (a, b) {
+    //     return a - b
+    // });
+    // d.sort(function (a, b) {
+    //     return a - b
+    // });
+    //
+    // alert("nhung phan tu co trong b nhung khong xuat hien trong a la: " + d);
+    // alert("nhung phan tu co o ca 2 mang: " + c);
+
+
+        // bai 3 tim chi so cua phan so lon nhat
+    let n=prompt("số lượng phần tử trong mảng tử số");
+    let numerators = [];
+    for (let i=0;i<n;i++){
+        numerators[i]=parseInt(prompt("nhập phần tử thứ" +i))
+    }
+    let m=prompt("số lượng phần tử trong mảng mẫu số");
+    let denominators = [];
+    for (let i=0;i<m;i++){
+        denominators[i]=parseInt(prompt("nhập phần tử thứ" +i))
+    }
+    let phanso = [];
+    let max = numerators[0] / denominators[0];
+    for (let i = 0; i < numerators.length; i++) {
+        for (let j = 0; j < denominators.length; j++) {
+            if (numerators[i] / denominators[j] > max) {
+                max = numerators[i] + denominators[j];
+            }
+            phanso.push(numerators[i] / denominators[j]);
+        }
+    }
+    console.log(phanso);
+    console.log(phanso.indexOf(max));
+
+
+    // bai 4 Viết một chương trình nhập một số từ bàn phím và in ra màn hình bằng chữ.
+
+     // let n=parseInt(prompt("nhap vao mot so tu ban phim"));
+     // let arr=[];
+     //     switch (n) {
+     //         case 0: {
+     //             n = "Khong ";
+     //             arr.push(n);
+     //             break;
+     //         }
+     //         case 1: {
+     //             n = "Mot ";
+     //             break;
+     //         }
+     //         case 2: {
+     //             n = "Hai ";
+     //             break;
+     //         }
+     //         case 3: {
+     //             n = "Ba ";
+     //             break;
+     //         }
+     //         case 4: {
+     //             n = "Bon ";
+     //             break;
+     //         }
+     //         case 5: {
+     //             n = "Nam ";
+     //             break;
+     //         }
+     //         case 6: {
+     //             n = "Sau ";
+     //             break;
+     //         }
+     //         case 7: {
+     //             n = "Bay ";
+     //             break;
+     //         }
+     //         case 8: {
+     //             n = "Tam ";
+     //             break;
+     //         }
+     //         case 9: {
+     //             n = "Chin ";
+     //             break;
+     //         }
+     //         default: {
+     //             alert(" day khong phai la so")
+     //             break;
+     //         }
+     //
+     //     }
+     // alert(n);
+     //
+
+     // bai 4 Viết một chương trình nhập một chuoi cac số từ bàn phím và in ra màn hình chuoi chữ.
+
+    // let a=prompt("nhap vao chu so ban muon hien thi");
+    // let number=["0","1","2","3","4","5","6","7","8","9"];
+    // let string=["Khong","Mot","Hai","Ba","Bon","Nam","Sau","Bay","Tam","Chin"]
+    // let chuoi="";
+    // for(let i=0;i<a.length;i++){
+    //     for(let j=0;j<number.length;j++){
+    //        if( a[i]==number[j]){
+    //            chuoi+=string[j];
+    //        }
+    //
+    //     }
+    // }
+    // alert(chuoi);
+
+
+    // bai 5:Viết một chương trình gọi thức uống đơn giản.
+    // class Menu{
+    //     constructor(id,ten,giatien) {
+    //         this._ten = ten;
+    //         this._giatien = giatien;
+    //         this._id = id;
+    //     }
+    //     getId() {
+    //         return this._id;
+    //     }
+    //
+    //     setId(value) {
+    //         this._id = value;
+    //     }
+    //
+    //     getTen() {
+    //         return this._ten;
+    //     }
+    //
+    //     setTen(value) {
+    //         this._ten = value;
+    //     }
+    //
+    //     getGiatien() {
+    //         return this._giatien;
+    //     }
+    //
+    //     setGiatien(value) {
+    //         this._giatien = value;
+    //     }
+    // }
+    // let listdouong=[];
+    // let menu1=new Menu(1,"cafe",15000);
+    // let menu2=new Menu(2,"nuoccam",30000);
+    // let menu3=new Menu(3,"nuocdua",25000);
+    //
+    // listdouong.push(menu1,menu2,menu3);
+    //
+    //     function chonmenu(){
+    //         let tt=[];
+    //         let tongtien=0;
+    //         let check = true;
+    //         while (check) {
+    //             let menu = prompt("hay chon do uong: \n" +
+    //                 "1.Nuoc cam\n" +
+    //                 "2.Cafe\n" +
+    //                 "3.Nuoc dua\n" +
+    //                 "4.Tong tien\n"+
+    //                 "5.Exit\n"
+    //             );
+    //             switch (menu) {
+    //                 case "1":
+    //                     alert(" gia tien cua: "+listdouong[1].getTen()+"la "+listdouong[1].getGiatien());
+    //                     let soluong1 = prompt(" nhap vao so luong ");
+    //                     let sum1 = (soluong1 * listdouong[1].getGiatien());
+    //                     tt.push(sum1);
+    //                     break;
+    //
+    //                 case "2":
+    //                     alert(" gia tien cua: "+listdouong[0].getTen()+ "la "+listdouong[0].getGiatien());
+    //                     let soluong2 = prompt(" nhap vao so luong ");
+    //                     let sum2 = soluong2 * listdouong[0].getGiatien();
+    //                     tt.push(sum2);
+    //                     break;
+    //                 case "3":
+    //                     alert(" gia tien cua: "+listdouong[2].getTen()+ "la "+listdouong[2].getGiatien());
+    //                     let soluong3 = prompt(" nhap vao so luong ");
+    //                     let sum3 = soluong3 * listdouong[2].getGiatien();
+    //                     tt.push(sum3);
+    //                     break;
+    //                 case "4":
+    //                     for(let i=0;i<tt.length;i++){
+    //                         tongtien+=tt[i];
+    //                     }
+    //                     alert("tong tien la: "+tongtien);
+    //                     break;
+    //                 case "5":
+    //                    check=false;
+    //                    break;
+    //             }
+    //         }
+    //
+    //
+    //     }
+    //     chonmenu();
+
+
+
+
+
+
+
+
+
+</script>
+</body>
+</html>
