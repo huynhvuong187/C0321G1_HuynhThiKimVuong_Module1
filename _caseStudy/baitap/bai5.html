@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    // // Bài 1: Viết hàm tính tổng các số chẵn trong ma trận có kích thước m*n.
+
+    // Với m, n là các số nhập từ bàn phím.
+    //  let m=parseInt(prompt("nhap so phan tu m trong mang"));
+    //  let n=parseInt(prompt("nhap so phan tu thu n"));
+    //  let arr1=new Array(m);
+    //  let sum=0;
+    //  for(let i=0;i<m;i++){
+    //      arr1[i]= new Array(n)
+    //      for(let j=0;j<n;j++){
+    //          arr1[i][j]=parseInt(prompt("nhap phan tu"));
+    //          if(arr1[i][j]%2==0){
+    //              sum+=arr1[i][j];
+    //          }
+    //      }
+    //  }
+    // alert(sum);
+
+
+    // Bài 2: Viết hàm liệt kê các số nguyên tố trong mảng 2 chiều, đếm các số nguyên tố có trong mảng đó.
+
+    // let m = parseInt(prompt("nhap so luong phan tu"));
+    // let n = parseInt(prompt("nhap so phan tu n"));
+    // let arr = [];
+    // let count = 0;
+    //
+    // for (let i = 0; i < m; i++) {
+    //     arr[i] = new Array(n);
+    //     for (let j = 0; j < n; j++) {
+    //         arr[i][j] = parseInt(prompt("nhap phan tu con cua: " + i+j));
+    //     }
+    // }
+    //     alert(arr);
+    // for (let a = 0; a < arr.length; a++) {
+    //     let check=true;
+    //     for (let b = 0; b < arr[a].length; b++) {
+    //         if (arr[a][b] < 2) {
+    //             check = false;
+    //             break;
+    //         } else {
+    //             for (let n = 2; n < arr[a][b]; n++) {
+    //                 if ((arr[a][b] % n == 0)) {
+    //                     check = false;
+    //                     break;
+    //
+    //                 }
+    //             }
+    //         }
+    //
+    //         if (check) {
+    //             count++;
+    //         }
+    //     }
+    //
+    // }
+    // alert(count);
+
+
+    // Bài 3: Viết hàm tìm giá trị lớn nhất, nhỏ nhất trong mảng 2 chiều
+
+    let m = parseInt(prompt("nhap so luong phan tu"));
+    let n = parseInt(prompt("nhap so phan tu n"));
+    let arr = new Array(m);
+    let min;
+    let max;
+    for (let i = 0; i < m; i++) {
+        arr[i] = new Array(n);
+        for (let j = 0; j < n; j++) {
+            arr[i][j] = parseInt(prompt("nhap phan tu con cua: " + i+j));
+            max=arr[i][0];
+            if(arr[i][j]>max){
+                max=arr[i][j];
+            }
+            min=arr[i][0];
+            if(arr[i][j]<min){
+                min=arr[i][j];
+            }
+        }
+    }
+    console.log(arr);
+    console.log("phan tu lon nhat: "+max+" phan tu be nhat: "+min);
+
+
+
+</script>
+</body>
+</html>
