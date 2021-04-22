@@ -7,25 +7,6 @@
 <body>
 <script>
 
-    //Bài 1: Viết một hàm chuẩn hóa xâu ký tự: biến đổi xâu ký tự thành xâu sao cho trong xâu
-    // không có 2 dấu cách liền nhau và bắt đầu mỗi từ phải in hoa. Ví dụ tRuong    TaN   HAI =>
-    // Truong Tan Hai.
-    //Và một hàm tìm từ dài nhất trong 1 xâu ký tự. Hàm main sử dụng các hàm này để
-    //nhập xâu ký tự từ bàn phím, in ra xâu trước và sau khi chuẩn hóa, 1 từ dài nhất trong xâu đó.
-
-    let n=prompt("Nhập vào xâu kí tự").toLowerCase().split(' ');
-    let arr=[];
-    for (let i = 0; i <n.length ; i++) {
-        if (n[i].length>0){
-            arr.push(n[i]);
-        }
-    }
-    for (let i = 0; i <arr.length ; i++) {
-        arr[i]=arr[i].charAt(0).toUpperCase()+arr[i].substring(1);
-    }
-    arr=arr.join(" ");
-    alert(arr);
-
 //Bài 2: Cho xâu kí tự. Hãy đếm số lượng kí tự khác nhau trong xâu đó
     //Ví dụ: s = "cabca", thì kết quả differentSymbolsNaive(s) = 3.
 	//Có 3 kí tự khác nhau là a, b và c.
@@ -54,23 +35,71 @@
     //Ví dụ: s1 = "aabcc" và s2 = "adcaa", thì kết quả commonCharacterCount(s1, s2) = 3.
 	//2 xâu s1 và s2 có 3 kí tự chung: 2 kí tự 'a' và 1 kí tự 'c'.
 
-    // let s1="aabcc";
-    // let s2="adcaa";
-    // let temp;
-    // let count=0;
-    // for(let i=0;i<s1.length;i++){
-    //     for(let j=0;j<s2.length;j++){
-    //         if(s1[i]===s2[j]){
-    //             temp=1;
-    //         }else{
-    //             break;
-    //         }
-    //         if(temp==1){
-    //             count++;
+    let s1="aabcc";
+    let s2="adcaa";
+    let temp;
+    let count=0;
+    for(let i=0;i<s1.length;i++){
+        for(let j=0;j<s2.length;j++){
+            if(s1[i]===s2[j]){
+                temp=1;
+            }else{
+                break;
+            }
+            if(temp==1){
+                count++;
+            }
+        }
+    }
+    alert(count);
+
+    //Bài 1: Viết một hàm chuẩn hóa xâu ký tự: biến đổi xâu ký tự thành xâu sao cho trong xâu
+    // không có 2 dấu cách liền nhau và bắt đầu mỗi từ phải in hoa. Ví dụ tRuong    TaN   HAI =>
+    // Truong Tan Hai.
+    //Và một hàm tìm từ dài nhất trong 1 xâu ký tự. Hàm main sử dụng các hàm này để
+    //nhập xâu ký tự từ bàn phím, in ra xâu trước và sau khi chuẩn hóa, 1 từ dài nhất trong xâu đó.
+    //
+    // let arr1 = [];
+    // function changeChar(string) {
+    //     let arr = string.split(" ");
+    //
+    //     for (let i = 0; i < arr.length; i++) {
+    //         if (arr[i].length > 0) {
+    //             arr1.push(arr[i]);
     //         }
     //     }
+    //     for (let j = 0; j < arr1.length; j++) {
+    //         arr1[j] = arr1[j].charAt(0).toUpperCase() + arr1[j].substring(1);
+    //     }
+    //     return arr1;
     // }
-    // alert(count);
+    //
+    // function findLongest(arr) {
+    //     let max = arr[0].length;
+    //     let index = 0;
+    //     for (let i = 0; i < arr.length; i++) {
+    //         if (arr[i].length > max) {
+    //             max = arr[i].length;
+    //             index = i;
+    //         }
+    //     }
+    //     return arr[index];
+    // }
+    //
+    // function callMain() {
+    //     let str = prompt("nhap vao chuoi ki tu");
+    //     alert("chuoi truoc: " + str)
+    //     changeChar(str);
+    //     alert("chuoi sau: " + arr1.join(" "));
+    //     alert("chuoi dai nhat trong xau la: " + findLongest(arr1));
+    // }
+    // callMain();
+
+    //Bài 3: Cho hai xâu kí tự, tìm số lượng kí tự chung giữa chúng.
+    //Ví dụ: s1 = "aabcc" và s2 = "adcaa", thì kết quả commonCharacterCount(s1, s2) = 3.
+    //2 xâu s1 và s2 có 3 kí tự chung: 2 kí tự 'a' và 1 kí tự 'c'.
+
+
 
 
 
