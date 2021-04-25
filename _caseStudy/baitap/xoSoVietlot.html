@@ -6,117 +6,191 @@
 </head>
 <body>
 <h3> Xo so codegym </h3>
-<input type="button" id="o1"onclick="click1()">
-<input type="button" id="o2"onclick="click2()">
-<input type="button" id="o3"onclick="click3()">
-<input type="button" id="o4"onclick="click4()">
-<input type="button" id="o5"onclick="click5()">
-<input type="button" id="o6"onclick="click6()"><br><br>
-<input value="Mua ve" type="button"id="o7"onclick="muave()">
+<input type="button"value="chon so"id="o1" onclick="click1()">
+<input type="button"value="chon so"id="o2"onclick="click2()">
+<input type="button"value="chon so"id="o3"onclick="click3()">
+<input type="button"value="chon so"id="o4"onclick="click4()">
+<input type="button"value="chon so"id="o5"onclick="click5()">
+<input type="button"value="chon so"id="o6"onclick="click6()"><br><br>
+<input value="Mua ve" type="button"id="o7"onclick="muaVe()">
 <input value="Xem Ket Qua" type="button"id="o8"onclick="ketqua()"><br>
 <script>
+    class XoSoVietlot{
+        constructor(so1,so2,so3,so4,so5,so6) {
+            this._so1 = so1;
+            this._so2 = so2;
+            this._so3 = so3;
+            this._so4 = so4;
+            this._so5 = so5;
+            this._so6 = so6;
+        }
 
-    function click1(){
-       let a1= prompt(" hay nhap so tu 0 den 99");
-       document.getElementById("o1").value=a1;
-       return a1;
+        getSo1() {
+            return this._so1;
+        }
 
+        setSo1(value) {
+            this._so1 = value;
+        }
+
+        getSo2() {
+            return this._so2;
+        }
+
+        setSo2(value) {
+            this._so2 = value;
+        }
+
+        getSo3() {
+            return this._so3;
+        }
+
+        setSo3(value) {
+            this._so3 = value;
+        }
+
+        getSo4() {
+            return this._so4;
+        }
+
+        setSo4(value) {
+            this._so4 = value;
+        }
+
+        getSo5() {
+            return this._so5;
+        }
+
+        setSo5(value) {
+            this._so5 = value;
+        }
+
+        getSo6() {
+            return this._so6;
+        }
+
+        setSo6(value) {
+            this._so6 = value;
+        }
     }
-    function click2(){
-        let a2= prompt(" hay nhap so tu 0 den 99");
-        document.getElementById("o2").value=a2;
-        return a2;
-
-    }
-    function click3(){
-        let a3= prompt(" hay nhap so tu 0 den 99");
-        document.getElementById("o3").value=a3;
-        return a3;
-
-    }
-    function click4(){
-        let a4= prompt(" hay nhap so tu 0 den 99");
-        document.getElementById("o4").value=a4;
-        return a4;
-
-
-    }
-    function click5(){
-        let a5= prompt(" hay nhap so tu 0 den 99");
-        document.getElementById("o5").value=a5;
-        return a5;
-
-    }
-    function click6(){
-        let a6= prompt(" hay nhap so tu 0 den 99");
-        document.getElementById("o6").value=a6;
-        return a6;
-
-    }
-
-    function muave(){
-        let arr=[];
-        let b1=document.getElementById("o1").value;
-        let b2=document.getElementById("o2").value;
-        let b3=document.getElementById("o3").value;
-        let b4=document.getElementById("o4").value;
-        let b5=document.getElementById("o5").value;
-        let b6=document.getElementById("o6").value;
-        arr.push(b1,b2,b3,b4,b5,b6);
-        return arr;
+    let arr=[];
+    function muaVe() {
+        chonCachMua();
+        let c1 = document.getElementById("o1").value;
+        console.log(c1);
+        let c2 = document.getElementById("o2").value;
+        let c3 = document.getElementById("o3").value;
+        let c4 = document.getElementById("o4").value;
+        let c5 = document.getElementById("o5").value;
+        let c6 = document.getElementById("o6").value;
+        arr.push(c1, c2, c3, c4, c5, c6);
     }
 
     function chonCachMua() {
-        let menu = prompt("ban co 2 lua chon:  \n" +
+        let menu = parseInt(prompt("ban co 2 lua chon:  \n" +
             "1.Ban muon tu chon so \n" +
             "2.Ban muon he thong random \n"
-        );
-        if (menu == 1) {
+        ));
+        if (menu === 1) {
             alert("o moi o hay chon 2 chu so chay tu 0 den 99");
-        } else {
-            let a1=Math.floor(Math.random() * 100);
-            a1<10?a1="0"+a1:a1=a1;
-            document.getElementById("o1").value=a1;
-            let a2=Math.floor(Math.random() * 100);
-            a2<10?a2="0"+a2:a2=a2;
-            document.getElementById("o2").value=a2;
-            let a3=Math.floor(Math.random() * 100);
-            a3<10?a3="0"+a3:a3=a3;
-            document.getElementById("o3").value=a3;
-            let a4=Math.floor(Math.random() * 100);
-            a4<10?a4="0"+a4:a4=a4;
-            document.getElementById("o4").value=a4;
-            let a5=Math.floor(Math.random() * 100);
-            a5<10?a5="0"+a5:a5=a5;
-            document.getElementById("o5").value=a5;
-            let a6=Math.floor(Math.random() * 100);
-            a6<10?a6="0"+a6:a6=a6;
-            document.getElementById("o6").value=a6;
+             this.click1 =function (){
+                let a1= prompt(" hay nhap so tu 0 den 99");
+                a1<10?a1="0"+a1:a1=a1;
+                document.getElementById("o1").value=a1;
+                console.log(a1);
+
+            }
+            this.click2=function(){
+                let a2= prompt(" hay nhap so tu 0 den 99");
+                a2<10?a2="0"+a2:a2=a2;
+                document.getElementById("o2").value=a2;
+
+            }
+            this.click3=function (){
+                let a3= prompt(" hay nhap so tu 0 den 99");
+                a3<10?a3="0"+a3:a3=a3;
+                document.getElementById("o3").value=a3;
+
+            }
+            this.click4=function (){
+                let a4= prompt(" hay nhap so tu 0 den 99");
+                a4<10?a4="0"+a4:a4=a4;
+                document.getElementById("o4").value=a4;
+
+            }
+            this.click5=function (){
+                let a5= prompt(" hay nhap so tu 0 den 99");
+                a5<10?a5="0"+a5:a5=a5;
+                document.getElementById("o5").value=a5;
+
+            }
+            this.click6=function (){
+                let a6= prompt(" hay nhap so tu 0 den 99");
+                a6<10?a6="0"+a6:a6=a6;
+                document.getElementById("o6").value=a6;
+            }
+        }
+        if(menu===2){
+            soBanDau.setSo1(Math.floor(Math.random() * 100));
+            let b1=soBanDau.getSo1();
+            b1<10?b1="0"+b1:b1=b1;
+            document.getElementById("o1").value=b1;
+
+            soBanDau.setSo2(Math.floor(Math.random() * 100));
+            let b2=soBanDau.getSo2();
+            b2<10?b2="0"+b2:b2=b2;
+            document.getElementById("o2").value=b2;
+
+            soBanDau.setSo3(Math.floor(Math.random() * 100));
+            let b3=soBanDau.getSo3();
+            b3<10?b3="0"+b3:b3=b3;
+            document.getElementById("o3").value=b3;
+
+            soBanDau.setSo4(Math.floor(Math.random() * 100));
+            let b4=soBanDau.getSo4()
+            b4<10?b4="0"+b4:b4=b4;
+            document.getElementById("o4").value=b4;
+
+            soBanDau.setSo5(Math.floor(Math.random() * 100));
+            let b5=soBanDau.getSo5();
+            b5<10?b5="0"+b5:b5=b5;
+            document.getElementById("o5").value=b5;
+
+            soBanDau.setSo6(Math.floor(Math.random() * 100));
+            let b6=soBanDau.getSo6();
+            b6<10?b6="0"+b6:b6=b6;
+            document.getElementById("o6").value=b6;
         }
     }
-    chonCachMua();
+
     let luckyNumber=["09","07","18","01","11","13"];
+    let soBanDau= new XoSoVietlot(11,22,33,44,55,66);
+
     function ketqua() {
         let count = 0;
+        console.log(arr);
+        console.log(luckyNumber);
         for (let i = 5; i >= 0; i--) {
-            if (luckyNumber[i] == muave()[i]) {
+            if (luckyNumber[i] === arr[i]) {
                 count++;
             } else {
                 break;
             }
         }
+        console.log(count);
         if (count < 3) {
             alert("chuc ban may man lan sau");
-        } else if (count == 3) {
+        } else if (count === 3) {
             alert("chuc mung ban trung giai tu gia tri 20 trieu dong");
-        } else if (count == 4) {
+        } else if (count === 4) {
             alert(" chuc mung ban trung giai ba tri gia 50 trieu dong");
-        } else if (count == 5) {
+        } else if (count === 5) {
             alert("chuc mung ban da trung gia nhi tri gia 100 trieu dong");
         } else {
             alert("chuc mung ban da trung giai nhat tri gia 2 ti dong");
         }
     }
+
 
 
 </script>

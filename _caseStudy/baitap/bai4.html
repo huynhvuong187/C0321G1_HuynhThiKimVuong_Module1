@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPE >
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -34,24 +34,124 @@
     //Bài 3: Cho hai xâu kí tự, tìm số lượng kí tự chung giữa chúng.
     //Ví dụ: s1 = "aabcc" và s2 = "adcaa", thì kết quả commonCharacterCount(s1, s2) = 3.
 	//2 xâu s1 và s2 có 3 kí tự chung: 2 kí tự 'a' và 1 kí tự 'c'.
+//
+// function commonCharacterCount(s1, s2) {
+//     let arr1 = s1.split("");
+//     let arr2 = s2.split("");
+//     let count = 0;
+//     let arr3 = [];
+//     for (let i = 0; i < arr1.length; i++) {
+//         for (let j = 0; j < arr2.length; j++) {
+//             if (arr1[i] === arr2[j]) {
+//                 count++;
+//                 arr3.push(arr1[i]);
+//                 arr1.splice(i, 1);
+//                 arr2.splice(j, 1);
+//                 i--;
+//                 break;
+//             }
+//         }
+//     }
+//     alert("so phan tu chung cua 2 chuoi la: " + count + " va chung la: " + arr3);
+//
+// }
+//
+// let s1 = prompt("nhap xau 1");
+// let s2 = prompt("nhap xau 2");
+// commonCharacterCount(s1, s2);
 
-    let s1="aabcc";
-    let s2="adcaa";
-    let temp;
-    let count=0;
-    for(let i=0;i<s1.length;i++){
-        for(let j=0;j<s2.length;j++){
-            if(s1[i]===s2[j]){
-                temp=1;
-            }else{
-                break;
-            }
-            if(temp==1){
-                count++;
-            }
-        }
-    }
-    alert(count);
+// cach 2
+
+// let s1 = prompt("nhap vao chuoi 1");
+// let s2 = prompt("nhap vao chuoi 2");
+// let arr1 = [];
+// let arr2 = [];
+// // chuoi giong nhau 1
+// for (let i = 0; i < s1.length; i++) {
+//     if (s2.includes(s1[i])) {
+//         arr1.push(s1[i]);
+//     }
+// }
+// arr1.sort().toString();
+//
+// // chuoi giong nhau 2
+//
+// for (let i = 0; i < s2.length; i++) {
+//     if (s1.includes(s2[i])) {
+//         arr2.push(s2[i]);
+//     }
+// }
+// arr2.sort().toString();
+//
+// // tao ra chuoi dem cac ki tu khac nhau trong 2 chuoi giong nhau da sort ra
+//
+// let chuoi1 = "";
+// for (let n = 0; n < arr1.length; n++) {
+//     if (chuoi1.includes(arr1[n]) === false) {
+//         chuoi1 += arr1[n];
+//     }
+// }
+// console.log('chuoi 1' + chuoi1)
+// let dem = new Array(chuoi1.length);
+// for (let i = 0; i < chuoi1.length; i++) {
+//     dem[i] = 1;
+// }
+// console.log("dem" + dem);
+//
+// // so lan xuat hien cua tung ki tu trong chuoi giong nhau thu 1
+// let kituchung = arr1[0];
+// let j = 0;
+// for (let i = 1; i < arr1.length; i++) {
+//     if (arr1[i] === kituchung) {
+//         dem[j]++;
+//         console.log(j);
+//     }
+//     if (arr1[i] !== kituchung) {
+//         kituchung = arr1[i];
+//         console.log(kituchung);
+//         j++;
+//     }
+// }
+// console.log("dem " + dem);
+//
+// //so lan xuat hien cua tung ki tu trong chuoi giong nhau thu 2
+// let dem2 = new Array(chuoi1.length);
+// for (let i = 0; i < chuoi1.length; i++) {
+//     dem2[i] = 1;
+// }
+// console.log("dem2 : " + dem2);
+//
+// // so lan xuat hien cua tung ki tu trong chuoi giong nhau thu 1
+// let kituchung2 = arr2[0];
+// let e = 0;
+// for (let i = 1; i < arr2.length; i++) {
+//     if (arr2[i] === kituchung2) {
+//         dem2[e]++;
+//         console.log(e);
+//     }
+//     if (arr2[i] !== kituchung2) {
+//         kituchung2 = arr2[i];
+//         console.log(kituchung2);
+//         e++;
+//     }
+// }
+// console.log("dem 3:  " + dem2);
+//
+// // so sanh dem 1 va dem 2 tim ra so lan xuat hien ki tu chung cua 2 chuoi da nhap.
+//
+// let mangSoLuong = new Array(dem2.length);
+// for (let i = 0; i < dem2.length; i++) {
+//     if (dem[i] < dem2[i]) {
+//         mangSoLuong[i] = dem[i];
+//     } else {
+//         mangSoLuong[i] = dem2[i];
+//     }
+// }
+// console.log(mangSoLuong);
+// for (let i = 0; i < chuoi1.length; i++) {
+//     alert("ki tu thu: " + (i + 1) + "la: " + chuoi1[i] + " so lan xuat hien: " + mangSoLuong[i]);
+// }
+
 
     //Bài 1: Viết một hàm chuẩn hóa xâu ký tự: biến đổi xâu ký tự thành xâu sao cho trong xâu
     // không có 2 dấu cách liền nhau và bắt đầu mỗi từ phải in hoa. Ví dụ tRuong    TaN   HAI =>
@@ -59,6 +159,8 @@
     //Và một hàm tìm từ dài nhất trong 1 xâu ký tự. Hàm main sử dụng các hàm này để
     //nhập xâu ký tự từ bàn phím, in ra xâu trước và sau khi chuẩn hóa, 1 từ dài nhất trong xâu đó.
     //
+
+
     // let arr1 = [];
     // function changeChar(string) {
     //     let arr = string.split(" ");
@@ -94,11 +196,6 @@
     //     alert("chuoi dai nhat trong xau la: " + findLongest(arr1));
     // }
     // callMain();
-
-    //Bài 3: Cho hai xâu kí tự, tìm số lượng kí tự chung giữa chúng.
-    //Ví dụ: s1 = "aabcc" và s2 = "adcaa", thì kết quả commonCharacterCount(s1, s2) = 3.
-    //2 xâu s1 và s2 có 3 kí tự chung: 2 kí tự 'a' và 1 kí tự 'c'.
-
 
 
 
