@@ -73,64 +73,65 @@
             this._so6 = value;
         }
     }
-    let arr=[];
+
     function muaVe() {
         chonCachMua();
-        let c1 = document.getElementById("o1").value;
-        console.log(c1);
-        let c2 = document.getElementById("o2").value;
-        let c3 = document.getElementById("o3").value;
-        let c4 = document.getElementById("o4").value;
-        let c5 = document.getElementById("o5").value;
-        let c6 = document.getElementById("o6").value;
-        arr.push(c1, c2, c3, c4, c5, c6);
     }
 
+    let arr1=[];
+    let arr2=[];
+    let count1=0;
     function chonCachMua() {
+
         let menu = parseInt(prompt("ban co 2 lua chon:  \n" +
             "1.Ban muon tu chon so \n" +
             "2.Ban muon he thong random \n"
         ));
-        if (menu === 1) {
+        if (menu === 1&&count1<4) {
+            count1++;
             alert("o moi o hay chon 2 chu so chay tu 0 den 99");
              this.click1 =function (){
                 let a1= prompt(" hay nhap so tu 0 den 99");
                 a1<10?a1="0"+a1:a1=a1;
                 document.getElementById("o1").value=a1;
-                console.log(a1);
+                arr1.push(a1);
 
             }
             this.click2=function(){
                 let a2= prompt(" hay nhap so tu 0 den 99");
                 a2<10?a2="0"+a2:a2=a2;
                 document.getElementById("o2").value=a2;
+                arr1.push(a2);
 
             }
             this.click3=function (){
                 let a3= prompt(" hay nhap so tu 0 den 99");
                 a3<10?a3="0"+a3:a3=a3;
                 document.getElementById("o3").value=a3;
-
+                arr1.push(a3);
             }
             this.click4=function (){
                 let a4= prompt(" hay nhap so tu 0 den 99");
                 a4<10?a4="0"+a4:a4=a4;
                 document.getElementById("o4").value=a4;
-
+                arr1.push(a4);
             }
             this.click5=function (){
                 let a5= prompt(" hay nhap so tu 0 den 99");
                 a5<10?a5="0"+a5:a5=a5;
                 document.getElementById("o5").value=a5;
-
+                arr1.push(a5);
             }
             this.click6=function (){
                 let a6= prompt(" hay nhap so tu 0 den 99");
                 a6<10?a6="0"+a6:a6=a6;
                 document.getElementById("o6").value=a6;
+                arr1.push(a6);
             }
+            return arr1;
         }
-        if(menu===2){
+        if(menu===2&&count1<4){
+            count1++;
             soBanDau.setSo1(Math.floor(Math.random() * 100));
             let b1=soBanDau.getSo1();
             b1<10?b1="0"+b1:b1=b1;
@@ -160,7 +161,10 @@
             let b6=soBanDau.getSo6();
             b6<10?b6="0"+b6:b6=b6;
             document.getElementById("o6").value=b6;
+            arr2.push(b1,b2,b3,b4,b5,b6)
+            return arr2;
         }
+
     }
 
     let luckyNumber=["09","07","18","01","11","13"];
@@ -168,15 +172,24 @@
 
     function ketqua() {
         let count = 0;
-        console.log(arr);
+        console.log(arr1);
+        console.log(arr2);
         console.log(luckyNumber);
         for (let i = 5; i >= 0; i--) {
-            if (luckyNumber[i] === arr[i]) {
+            if (luckyNumber[i] == arr1[i]) {
                 count++;
             } else {
                 break;
             }
         }
+        for (let i = 5; i >= 0; i--) {
+            if (luckyNumber[i] == arr2[i]) {
+                count++;
+            } else {
+                break;
+            }
+        }
+
         console.log(count);
         if (count < 3) {
             alert("chuc ban may man lan sau");
